@@ -10,33 +10,30 @@ body {
   color: #fff;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 8%;
+header {
   background-color: rgba(9, 77, 16, 0.55);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+header span a {
+  color: #fff;
+}
+
+nav {
+  padding: 10px 8%;
   font-family: "Amatic SC", serif;
 }
 
-nav p {
+nav span {
   font-size: 32px;
   margin: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #fff;
-}
-
-ul {
-  display: flex;
-}
-
-ul li {
-  list-style: none;
-  padding: 0 20px;
-  font-size: 28px;
 }
 
 #heroSection__content {
@@ -44,14 +41,14 @@ ul li {
   height: 80vh;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  padding-top: 5vh;
 }
 
 h1 {
   font-family: "Amatic SC", serif;
   font-size: 72px;
   width: 45%;
-  margin: 0 10% 0 8%;
+  padding: 0 10% 0 8%;
 }
 
 #heroSection__content a {
@@ -65,4 +62,175 @@ h1 {
   border-radius: 10px;
   border: 1px solid #fff;
   width: fit-content;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+/* logic of burger menu */
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+header li {
+  text-align: right;
+}
+
+header li a {
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+}
+
+header li a:hover,
+header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+/* menu */
+
+header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 20px;
+  position: relative;
+  user-select: none;
+}
+
+header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+header .menu-btn {
+  display: none;
+}
+
+header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 992px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header li {
+    float: right;
+  }
+  header li a {
+    padding: 20px 30px;
+  }
+  header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  header .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    padding: 10px 4%;
+  }
+
+  nav span {
+    font-size: 28px;
+  }
+
+  #heroSection {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+      url(img/hero-img.webp);
+    background-position: center;
+  }
+
+  #heroSection__content a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: unset;
+    font-size: 16px;
+    margin: 0 30%;
+  }
+
+  h1 {
+    font-size: 44px;
+    text-align: center;
+    padding: 0;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    padding: 0;
+  }
 }
