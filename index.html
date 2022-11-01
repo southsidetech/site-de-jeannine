@@ -26,7 +26,7 @@
       </header>
       <div id="heroSection__content">
         <h1>Détendez-vous avec<br />mes tisanes relaxantes</h1>
-        <a href="#infusionsSection">Découvrir</a>
+        <a class="primaryButton" href="#infusionsSection">Découvrir</a>
       </div>
     </section>
 
@@ -94,72 +94,85 @@
       </div>
     </section>
 
-    <section>
-      <div class="titleSection">
+    <section class="siteSection" id="contactSection">
+      <div class="siteSection__title">
         <h2>Contact</h2>
       </div>
       <div id="contactContent" class="sectionContent">
-        <div id="contactDescription">
-          <p>
-            De manière à vous fournir le meilleur service possible, je vous
-            invite à me contacter directement par ce formulaire.
-          </p>
-          <p>
-            Nous pourrons alors échanger sur votre demande, et même mettre en
-            place des offres sur mesure pour vous.
-          </p>
-        </div>
-        <div id="contactForm">
-          <div class="formRow">
+        <div class="sectionContent__container">
+          <div id="contactSection__description">
             <div>
-              <label for="contactName">Nom</label>
-              <input type="text" />
+              <p>
+                De manière à vous fournir le meilleur service possible, je vous
+                invite à me contacter directement par ce formulaire.
+              </p>
             </div>
             <div>
-              <label for="contactMail">Mail</label>
-              <input type="email" />
-            </div>
-            <div>
-              <label for="contactMotive">Motif</label>
-              <select name="contactMotive" id="contactMotive">
-                <option value="">Commande</option>
-                <option value="Contact">Prise de contact</option>
-                <option value="other">Autre</option>
-              </select>
+              <p>
+                Nous pourrons alors échanger sur votre demande, et même mettre
+                en place des offres sur mesure pour vous.
+              </p>
             </div>
           </div>
-          <div class="formRow">
-            <label for="contactMessage">Message</label>
-            <textarea
-              name="contactMessage"
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
+          <div id="contactForm">
+            <div class="formRow">
+              <div>
+                <label for="contactName">Nom</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label for="contactMail">Mail</label>
+                <input type="email" />
+              </div>
+              <div>
+                <label for="contactMotive">Motif</label>
+                <select name="contactMotive" id="contactMotive">
+                  <option value="">Commande</option>
+                  <option value="Contact">Prise de contact</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="formRow" id="formMessage">
+              <div>
+                <label for="contactMessage">Message</label>
+                <textarea
+                  name="contactMessage"
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div id="submitButton">
+              <a class="primaryButton" href="#">Envoyer</a>
+            </div>
           </div>
-          <a href="#">Envoyer</a>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="titleSection">
+    <section class="siteSection" id="aboutSection">
+      <div class="siteSection__title">
         <h2>Qui suis-je ?</h2>
       </div>
       <div id="aboutContent" class="sectionContent">
-        <div>
-          <p>
-            Enchantée, moi c’est Jeannine, pour vous servir. Actuellement à
-            Amsterdam pour des raisons professionnelles, je conçois des
-            infusions à base de plantes médicinales.
-          </p>
-          <p>
-            Pour cela, j’utilise des recettes secrètes transmises de mère en
-            fille depuis des générations.
-          </p>
-        </div>
-        <div>
-          <img src="img/about-img.png" alt="" />
+        <div class="sectionContent__container">
+          <div id="aboutContent__description">
+            <p>
+              Enchantée, moi c’est Jeannine, pour vous servir. Actuellement à
+              Amsterdam pour des raisons professionnelles, je conçois des
+              infusions à base de plantes médicinales.
+            </p>
+            <br />
+            <p>
+              Pour cela, j’utilise des recettes secrètes transmises de mère en
+              fille depuis des générations.
+            </p>
+          </div>
+          <div id="aboutContent__image">
+            <img src="img/about-img.png" alt="" />
+          </div>
         </div>
       </div>
     </section>

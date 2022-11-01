@@ -31,22 +31,21 @@ header span a {
   height: 80vh;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5vh;
+  padding: 6vh 10% 0 8%;
 }
 
 h1 {
   font-family: "Amatic SC", serif;
   font-size: 72px;
   width: 45%;
-  padding: 0 10% 0 8%;
+  margin: 28px 0;
 }
 
-#heroSection__content a {
+.primaryButton {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 20px;
   text-decoration: none;
-  margin: 0 10% 0 8%;
   color: #fff;
   background-color: #094d10;
   border-radius: 10px;
@@ -91,6 +90,8 @@ img {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 /* infusions section */
@@ -178,6 +179,7 @@ img {
   font-size: 28px;
   font-weight: 500;
   margin: 10px 0;
+  color: #103623;
 }
 
 #feesSection__students img {
@@ -185,7 +187,100 @@ img {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+/* contact section */
+#contactSection .sectionContent__container {
+  flex-direction: column;
+}
+
+#contactSection .siteSection__title {
+  width: 14%;
+}
+
+#contactSection__description {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: #103623;
+  display: flex;
+  gap: 4%;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a7ccb2;
+  border-radius: 20px;
+  padding: 20px 6%;
+  gap: 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.formRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formRow div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 12px;
+}
+
+.formRow#formMessage div {
+  width: 100%;
+}
+
+.formRow label {
+  font-family: "Amatic SC", serif;
+  font-size: 28px;
+}
+
+input,
+select {
+  height: 40px;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-radius: 20px;
+  border-width: 1px;
+}
+
+#submitButton {
+  display: flex;
+  justify-content: right;
+}
+
+/* about section */
+#aboutSection {
+  padding-bottom: 52px;
+}
+
+#aboutSection .siteSection__title {
+  width: 18%;
+}
+
+#aboutContent__description {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 60%;
+  font-size: 18px;
+  color: #103623;
+}
+
+#aboutContent__image {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+#aboutContent__image img {
+  width: 40%;
+}
+
+#aboutContent @media (max-width: 768px) {
   h1 {
     width: 100%;
   }
