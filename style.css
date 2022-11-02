@@ -15,7 +15,7 @@ p {
 }
 
 header {
-  background-color: rgba(9, 77, 16, 0.55);
+  background-color: rgba(9, 77, 16, 0.8);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -212,6 +212,7 @@ img {
   padding: 20px 6%;
   gap: 20px;
   margin-top: 40px;
+  width: 100%;
 }
 
 .formRow {
@@ -233,6 +234,7 @@ img {
 .formRow label {
   font-family: "Amatic SC", serif;
   font-size: 28px;
+  color: #103623;
 }
 
 input,
@@ -279,7 +281,53 @@ textarea {
   width: 40%;
 }
 
-#aboutContent @media (max-width: 768px) {
+/* footer */
+
+footer {
+  background-color: #094d10;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Amatic SC", serif;
+  font-size: 20px;
+  padding: 20px 10%;
+}
+
+footer,
+footer a {
+  color: #fff;
+}
+
+footer img {
+  height: 20px;
+}
+
+footer,
+#footer-left,
+#footer-left div,
+#footer-right {
+  display: flex;
+  align-items: center;
+}
+
+#footer-left {
+  gap: 40%;
+}
+
+#footer-left div {
+  gap: 28%;
+}
+
+#footer-right {
+  border-left: 1px solid #fff;
+  width: 50%;
+  gap: 8%;
+}
+
+#legalMentions {
+  padding-left: 10%;
+}
+
+@media (max-width: 768px) {
   h1 {
     width: 100%;
   }
