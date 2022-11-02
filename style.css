@@ -257,7 +257,7 @@ textarea {
 
 /* about section */
 #aboutSection {
-  padding-bottom: 52px;
+  padding-bottom: 80px;
 }
 
 #aboutSection .siteSection__title {
@@ -302,22 +302,22 @@ footer img {
 }
 
 footer,
-#footer-left,
-#footer-left div,
-#footer-right {
+#footer__left,
+#footer__left div,
+#footer__right {
   display: flex;
   align-items: center;
 }
 
-#footer-left {
+#footer__left {
   gap: 40%;
 }
 
-#footer-left div {
+#footer__left div {
   gap: 28%;
 }
 
-#footer-right {
+#footer__right {
   border-left: 1px solid #fff;
   width: 50%;
   gap: 8%;
@@ -325,6 +325,36 @@ footer,
 
 #legalMentions {
   padding-left: 10%;
+}
+
+@media (min-width: 1280px) {
+  .sectionContent__container {
+    padding: 0 20%;
+  }
+
+  #infusionsSection .siteSection__title {
+    width: 25%;
+  }
+
+  #feesSection .siteSection__title {
+    width: 22%;
+  }
+
+  #contactSection .siteSection__title {
+    width: 20%;
+  }
+
+  #aboutSection .siteSection__title {
+    width: 25%;
+  }
+
+  footer {
+    padding: 20px 15%;
+  }
+
+  #footer__left {
+    gap: 60%;
+  }
 }
 
 @media (max-width: 768px) {
