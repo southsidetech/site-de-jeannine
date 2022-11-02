@@ -285,11 +285,9 @@ textarea {
 
 footer {
   background-color: #094d10;
-  display: flex;
-  justify-content: space-between;
   font-family: "Amatic SC", serif;
   font-size: 20px;
-  padding: 20px 10%;
+  padding: 20px 6% 20px 8%;
 }
 
 footer,
@@ -310,7 +308,9 @@ footer,
 }
 
 #footer__left {
-  gap: 40%;
+  gap: 15%;
+  width: 45%;
+  padding-right: 20px;
 }
 
 #footer__left div {
@@ -319,15 +319,16 @@ footer,
 
 #footer__right {
   border-left: 1px solid #fff;
-  width: 50%;
+  width: 55%;
   gap: 8%;
+  justify-content: space-between;
 }
 
 #legalMentions {
   padding-left: 10%;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1320px) {
   .sectionContent__container {
     padding: 0 20%;
   }
@@ -349,17 +350,50 @@ footer,
   }
 
   footer {
-    padding: 20px 15%;
+    padding: 20px 8% 20px 20%;
   }
 
-  #footer__left {
-    gap: 60%;
+  #legalMentions {
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  footer {
+    font-size: 18px;
+    padding: 20px 8%;
+  }
+
+  #legalMentions {
+    padding-left: 5%;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
     width: 100%;
+  }
+
+  #infusionsSection .sectionContent__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .infusionItem {
+    width: 45%;
+  }
+
+  #feesSection .sectionContent__container {
+    flex-direction: column;
+    gap: 52px;
+  }
+
+  #feesSection__description {
+    width: 100%;
+  }
+
+  #feesSection__students {
+    width: 72%;
   }
 }
 
@@ -393,10 +427,104 @@ footer,
     padding: 0;
     font-weight: 400;
   }
+
+  #infusionsSection .siteSection__title {
+    width: 35%;
+  }
+
+  #infusionsSection .sectionContent__container {
+    gap: 40px;
+  }
+
+  .infusionItem {
+    width: 100%;
+  }
+
+  #feesSection .siteSection__title {
+    width: 24%;
+  }
+
+  #feesSection__students {
+    width: 100%;
+  }
+
+  #feesSection__students div {
+    width: 70%;
+  }
+
+  #contactSection .siteSection__title {
+    width: 26%;
+  }
+
+  #contactSection__description {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .formRow div {
+    width: 100%;
+  }
+
+  #contactForm .primaryButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  #aboutSection .siteSection__title {
+    width: 40%;
+  }
+
+  #aboutContent .sectionContent__container {
+    flex-direction: column;
+  }
+
+  #aboutContent__description {
+    width: 100%;
+  }
+
+  #aboutContent__image {
+    width: 50%;
+  }
+
+  #aboutContent__image img {
+    width: 100%;
+  }
+
+  footer {
+    padding: 28px 8%;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  #footer__left {
+    padding-right: 0;
+    justify-content: space-between;
+  }
+
+  #footer__left p {
+    display: none;
+  }
+
+  #footer__right {
+    width: 100%;
+    border-left: unset;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
 }
 
 @media (max-width: 320px) {
   h1 {
     padding: 0;
+  }
+
+  #infusionsSection .siteSection__title {
+    width: 50%;
   }
 }
