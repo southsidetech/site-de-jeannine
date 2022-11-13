@@ -1,0 +1,201 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive-menu.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="heroSection">
+      <header>
+        <nav>
+          <span><a href="#">Les plantes de Jeannine</a></span>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="navicon"></span
+          ></label>
+          <ul class="menu">
+            <li><a href="#infusionsSection">Infusions</a></li>
+            <li><a href="#feesSection">Tarifs</a></li>
+            <li><a href="#aboutSection">A propos de moi</a></li>
+            <li><a href="#contactSection">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="heroSection__content">
+        <h1>Détendez-vous avec<br />mes tisanes relaxantes</h1>
+        <a class="primaryButton" href="#infusionsSection">Découvrir</a>
+      </div>
+    </section>
+
+    <section class="siteSection" id="infusionsSection">
+      <div class="siteSection__title">
+        <h2>Infusions</h2>
+      </div>
+      <div class="sectionContent">
+        <div class="sectionContent__container">
+          <div class="infusionItem">
+            <img src="img/energie.png" alt="" />
+            <h3>Energie</h3>
+            <div class="infusionItem__button">
+              <a href="#">Plus d'infos</a>
+            </div>
+          </div>
+          <div class="infusionItem">
+            <img src="img/relaxation.png" alt="" />
+            <h3>Relaxation</h3>
+            <div class="infusionItem__button">
+              <a href="#">Plus d'infos</a>
+            </div>
+          </div>
+          <div class="infusionItem">
+            <img src="img/sommeil-profond.png" alt="" />
+            <h3>Sommeil profond</h3>
+            <div class="infusionItem__button">
+              <a href="#">Plus d'infos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="siteSection" id="feesSection">
+      <div class="siteSection__title">
+        <h2>Tarifs</h2>
+      </div>
+      <div class="sectionContent">
+        <div class="sectionContent__container">
+          <div id="feesSection__description">
+            <p>
+              Chacune de mes tisanes est préparée avec le plus grand des soins.
+              Je m’efforce de vous proposer la meilleure qualité possible sur
+              tous mes produits. Satisfaits ou remboursés !<br /><br />Je
+              propose la livraison, moyennant 10€ de frais supplémentaires.
+            </p>
+            <p id="feesSection__descriptionStrong">
+              <strong>Pour un paquet de 20 infusions :</strong>
+            </p>
+            <div>
+              <p>Energie : 10€</p>
+              <p>Relaxation : 12€</p>
+              <p>Sommeil profond : 20€</p>
+            </div>
+          </div>
+          <div id="feesSection__students">
+            <div>
+              <img src="img/student-fees-icon.svg" alt="" />
+              <p>Vous êtes étudiant.e ?</p>
+              <p>Tarifs spéciaux de -50% !</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="siteSection" id="contactSection">
+      <div class="siteSection__title">
+        <h2>Contact</h2>
+      </div>
+      <div id="contactContent" class="sectionContent">
+        <div class="sectionContent__container">
+          <div id="contactSection__description">
+            <div>
+              <p>
+                De manière à vous fournir le meilleur service possible, je vous
+                invite à me contacter directement par ce formulaire.
+              </p>
+            </div>
+            <div>
+              <p>
+                Nous pourrons alors échanger sur votre demande, et même mettre
+                en place des offres sur mesure pour vous.
+              </p>
+            </div>
+          </div>
+          <div id="contactForm">
+            <div class="formRow">
+              <div>
+                <label for="contactName">Nom</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label for="contactMail">Mail</label>
+                <input type="email" />
+              </div>
+              <div>
+                <label for="contactMotive">Motif</label>
+                <select name="contactMotive" id="contactMotive">
+                  <option value="">Commande</option>
+                  <option value="Contact">Prise de contact</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="formRow" id="formMessage">
+              <div>
+                <label for="contactMessage">Message</label>
+                <textarea
+                  name="contactMessage"
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div id="submitButton">
+              <a class="primaryButton" href="#">Envoyer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="siteSection" id="aboutSection">
+      <div class="siteSection__title">
+        <h2>Qui suis-je ?</h2>
+      </div>
+      <div id="aboutContent" class="sectionContent">
+        <div class="sectionContent__container">
+          <div id="aboutContent__description">
+            <p>
+              Enchantée, moi c’est Jeannine, pour vous servir. Actuellement à
+              Amsterdam pour des raisons professionnelles, je conçois des
+              infusions à base de plantes médicinales.
+            </p>
+            <br />
+            <p>
+              Pour cela, j’utilise des recettes secrètes transmises de mère en
+              fille depuis des générations.
+            </p>
+          </div>
+          <div id="aboutContent__image">
+            <img src="img/about-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer__left">
+        <div>
+          <img src="img/address-icon.svg" alt="" />
+          <p>Amsterdam</p>
+        </div>
+        <div>
+          <img src="img/phone-icon.svg" alt="" />
+          <p>Téléphone</p>
+        </div>
+        <div>
+          <img src="img/email-icon.svg" alt="" />
+          <p>Mail</p>
+        </div>
+      </div>
+      <div id="footer__right">
+        <p id="legalMentions"><a href="">Mentions légales</a></p>
+        <p>© Les plantes de Jeannine, 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
