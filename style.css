@@ -7,14 +7,14 @@ p {
   margin: 0;
 }
 
-#heroSection {
+.DMVS #heroSection {
   background-image: url(img/hero-img.webp);
   height: 100vh;
   background-size: cover;
   color: #fff;
 }
 
-header {
+.DMVS header {
   background-color: rgba(9, 77, 16, 0.8);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -22,11 +22,11 @@ header {
   z-index: 3;
 }
 
-header span a {
+.DMVS header span a {
   color: #fff;
 }
 
-#heroSection__content {
+.DMVS #heroSection__content {
   display: flex;
   height: 80vh;
   flex-direction: column;
@@ -34,14 +34,14 @@ header span a {
   padding: 6vh 10% 0 8%;
 }
 
-h1 {
+.DMVS h1 {
   font-family: "Amatic SC", serif;
   font-size: 72px;
   width: 45%;
   margin: 28px 0;
 }
 
-.primaryButton {
+.DMVS .primaryButton {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   padding: 10px 20px;
@@ -54,18 +54,18 @@ h1 {
   font-weight: 500;
 }
 
-img {
+.DMVS img {
   width: 100%;
 }
 
 /* site section */
 
-.siteSection {
+.DMVS .siteSection {
   background-color: #ecffeb;
   padding-top: 60px;
 }
 
-.siteSection__title {
+.DMVS .siteSection__title {
   background: linear-gradient(#094d10, #020f03);
   color: #fff;
   font-family: "Amatic SC", serif;
@@ -76,17 +76,17 @@ img {
   padding-right: 20px;
 }
 
-.siteSection__title h2 {
+.DMVS .siteSection__title h2 {
   padding: 8px 0;
   margin: 0;
 }
 
-.sectionContent {
+.DMVS .sectionContent {
   display: flex;
   justify-content: center;
 }
 
-.sectionContent__container {
+.DMVS .sectionContent__container {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -96,17 +96,17 @@ img {
 
 /* infusions section */
 
-#infusionsSection .siteSection__title {
+.DMVS #infusionsSection .siteSection__title {
   width: 18%;
   padding-right: 20px;
 }
 
-#infusionsSection h3 {
+.DMVS #infusionsSection h3 {
   font-family: "Amatic SC", serif;
   font-size: 30px;
 }
 
-.infusionItem {
+.DMVS .infusionItem {
   display: flex;
   flex-direction: column;
   border: 1px solid #a7ccb2;
@@ -116,16 +116,16 @@ img {
   padding: 0 0 40px 0;
 }
 
-.infusionItem img {
+.DMVS .infusionItem img {
   border-radius: 20px 20px 0 0;
 }
 
-.infusionItem__button {
+.DMVS .infusionItem__button {
   display: flex;
   justify-content: center;
 }
 
-#infusionsSection a {
+.DMVS #infusionsSection a {
   border: 1px solid #103623;
   width: 40%;
   font-family: "Poppins", sans-serif;
@@ -138,33 +138,33 @@ img {
 }
 
 /* infusions section */
-#feesSection .siteSection__title {
+.DMVS #feesSection .siteSection__title {
   width: 14%;
 }
 
-#feesSection__description {
+.DMVS #feesSection__description {
   width: 55%;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   color: #103623;
 }
 
-#feesSection__description div {
+.DMVS #feesSection__description div {
   display: flex;
   justify-content: space-between;
 }
 
-#feesSection__students {
+.DMVS #feesSection__students {
   width: 45%;
   display: flex;
   justify-content: center;
 }
 
-#feesSection__descriptionStrong {
+.DMVS #feesSection__descriptionStrong {
   margin: 24px 0 20px;
 }
 
-#feesSection__students div {
+.DMVS #feesSection__students div {
   width: 55%;
   border: 1px solid #a7ccb2;
   display: flex;
@@ -174,7 +174,7 @@ img {
   border-radius: 20px;
 }
 
-#feesSection__students p {
+.DMVS #feesSection__students p {
   font-family: "Amatic SC", serif;
   font-size: 28px;
   font-weight: 500;
@@ -182,21 +182,21 @@ img {
   color: #103623;
 }
 
-#feesSection__students img {
+.DMVS #feesSection__students img {
   width: 30%;
   margin-bottom: 20px;
 }
 
 /* contact section */
-#contactSection .sectionContent__container {
+.DMVS #contactSection .sectionContent__container {
   flex-direction: column;
 }
 
-#contactSection .siteSection__title {
+.DMVS #contactSection .siteSection__title {
   width: 14%;
 }
 
-#contactSection__description {
+.DMVS #contactSection__description {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   color: #103623;
@@ -204,7 +204,7 @@ img {
   gap: 4%;
 }
 
-#contactForm {
+.DMVS #contactForm {
   display: flex;
   flex-direction: column;
   border: 1px solid #a7ccb2;
@@ -215,204 +215,204 @@ img {
   width: 100%;
 }
 
-.formRow {
+.DMVS .formRow {
   display: flex;
   justify-content: space-between;
 }
 
-.formRow div {
+.DMVS .formRow div {
   display: flex;
   flex-direction: column;
   width: 30%;
   gap: 12px;
 }
 
-.formRow#formMessage div {
+.DMVS .formRow#formMessage div {
   width: 100%;
 }
 
-.formRow label {
+.DMVS .formRow label {
   font-family: "Amatic SC", serif;
   font-size: 28px;
   color: #103623;
 }
 
-input,
-select {
+.DMVS input,
+.DMVS select {
   height: 40px;
 }
 
-input,
-select,
-textarea {
+.DMVS input,
+.DMVS select,
+.DMVS textarea {
   background-color: transparent;
   border-radius: 20px;
   border-width: 1px;
 }
 
-#submitButton {
+.DMVS #submitButton {
   display: flex;
   justify-content: right;
 }
 
 /* about section */
-#aboutSection {
+.DMVS #aboutSection {
   padding-bottom: 80px;
 }
 
-#aboutSection .siteSection__title {
+.DMVS #aboutSection .siteSection__title {
   width: 18%;
 }
 
-#aboutContent__description {
+.DMVS #aboutContent__description {
   font-family: "Source Sans Pro", sans-serif;
   width: 60%;
   font-size: 18px;
   color: #103623;
 }
 
-#aboutContent__image {
+.DMVS #aboutContent__image {
   display: flex;
   justify-content: center;
   width: 40%;
 }
 
-#aboutContent__image img {
+.DMVS #aboutContent__image img {
   width: 40%;
 }
 
 /* footer */
 
-footer {
+.DMVS footer {
   background-color: #094d10;
   font-family: "Amatic SC", serif;
   font-size: 20px;
   padding: 20px 6% 20px 8%;
 }
 
-footer,
-footer a {
+.DMVS footer,
+.DMVS footer a {
   color: #fff;
 }
 
-footer img {
+.DMVS footer img {
   height: 20px;
 }
 
-footer,
-#footer__left,
-#footer__left div,
-#footer__right {
+.DMVS footer,
+.DMVS #footer__left,
+.DMVS #footer__left div,
+.DMVS #footer__right {
   display: flex;
   align-items: center;
 }
 
-#footer__left {
+.DMVS #footer__left {
   gap: 15%;
   width: 45%;
   padding-right: 20px;
 }
 
-#footer__left div {
+.DMVS #footer__left div {
   gap: 28%;
 }
 
-#footer__right {
+.DMVS #footer__right {
   border-left: 1px solid #fff;
   width: 55%;
   gap: 8%;
   justify-content: space-between;
 }
 
-#legalMentions {
+.DMVS #legalMentions {
   padding-left: 10%;
 }
 
 @media (min-width: 1320px) {
-  .sectionContent__container {
+  .DMVS .sectionContent__container {
     padding: 0 20%;
   }
 
-  #infusionsSection .siteSection__title {
+  .DMVS #infusionsSection .siteSection__title {
     width: 25%;
   }
 
-  #feesSection .siteSection__title {
+  .DMVS #feesSection .siteSection__title {
     width: 22%;
   }
 
-  #contactSection .siteSection__title {
+  .DMVS #contactSection .siteSection__title {
     width: 20%;
   }
 
-  #aboutSection .siteSection__title {
+  .DMVS #aboutSection .siteSection__title {
     width: 25%;
   }
 
-  footer {
+  .DMVS footer {
     padding: 20px 8% 20px 20%;
   }
 
-  #legalMentions {
+  .DMVS #legalMentions {
     padding-left: 15%;
   }
 }
 
 @media (max-width: 992px) {
-  footer {
+  .DMVS footer {
     font-size: 18px;
     padding: 20px 8%;
   }
 
-  #legalMentions {
+  .DMVS #legalMentions {
     padding-left: 5%;
   }
 }
 
 @media (max-width: 768px) {
-  h1 {
+  .DMVS h1 {
     width: 100%;
   }
 
-  #infusionsSection .sectionContent__container {
+  .DMVS #infusionsSection .sectionContent__container {
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .infusionItem {
+  .DMVS .infusionItem {
     width: 45%;
   }
 
-  #feesSection .sectionContent__container {
+  .DMVS #feesSection .sectionContent__container {
     flex-direction: column;
     gap: 52px;
   }
 
-  #feesSection__description {
+  .DMVS #feesSection__description {
     width: 100%;
   }
 
-  #feesSection__students {
+  .DMVS #feesSection__students {
     width: 72%;
   }
 }
 
 @media (max-width: 576px) {
-  nav {
+  .DMVS nav {
     padding: 10px 4%;
   }
 
-  nav span {
+  .DMVS nav span {
     font-size: 28px;
   }
 
-  #heroSection {
+  .DMVS #heroSection {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
       url(img/hero-img.webp);
     background-position: center;
   }
 
-  #heroSection__content a {
+  .DMVS #heroSection__content a {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -421,96 +421,96 @@ footer,
     margin: 0 30%;
   }
 
-  h1 {
+  .DMVS h1 {
     font-size: 44px;
     text-align: center;
     padding: 0;
     font-weight: 400;
   }
 
-  #infusionsSection .siteSection__title {
+  .DMVS #infusionsSection .siteSection__title {
     width: 35%;
   }
 
-  #infusionsSection .sectionContent__container {
+  .DMVS #infusionsSection .sectionContent__container {
     gap: 40px;
   }
 
-  .infusionItem {
+  .DMVS .infusionItem {
     width: 100%;
   }
 
-  #feesSection .siteSection__title {
+  .DMVS #feesSection .siteSection__title {
     width: 24%;
   }
 
-  #feesSection__students {
+  .DMVS #feesSection__students {
     width: 100%;
   }
 
-  #feesSection__students div {
+  .DMVS #feesSection__students div {
     width: 70%;
   }
 
-  #contactSection .siteSection__title {
+  .DMVS #contactSection .siteSection__title {
     width: 26%;
   }
 
-  #contactSection__description {
+  .DMVS #contactSection__description {
     flex-direction: column;
     gap: 20px;
   }
 
-  .formRow {
+  .DMVS .formRow {
     flex-direction: column;
     gap: 20px;
   }
 
-  .formRow div {
+  .DMVS .formRow div {
     width: 100%;
   }
 
-  #contactForm .primaryButton {
+  .DMVS #contactForm .primaryButton {
     width: 100%;
     text-align: center;
   }
 
-  #aboutSection .siteSection__title {
+  .DMVS #aboutSection .siteSection__title {
     width: 40%;
   }
 
-  #aboutContent .sectionContent__container {
+  .DMVS #aboutContent .sectionContent__container {
     flex-direction: column;
   }
 
-  #aboutContent__description {
+  .DMVS #aboutContent__description {
     width: 100%;
   }
 
-  #aboutContent__image {
+  .DMVS #aboutContent__image {
     width: 50%;
   }
 
-  #aboutContent__image img {
+  .DMVS #aboutContent__image img {
     width: 100%;
   }
 
-  footer {
+  .DMVS footer {
     padding: 28px 8%;
     flex-direction: column;
     gap: 32px;
   }
 
-  #footer__left {
+  .DMVS #footer__left {
     padding-right: 0;
     justify-content: space-between;
   }
 
-  #footer__left p {
+  .DMVS #footer__left p {
     display: none;
   }
 
-  #footer__right {
+  .DMVS #footer__right {
     width: 100%;
     border-left: unset;
     flex-direction: column;
@@ -520,11 +520,11 @@ footer,
 }
 
 @media (max-width: 320px) {
-  h1 {
+  .DMVS h1 {
     padding: 0;
   }
 
-  #infusionsSection .siteSection__title {
+  .DMVS #infusionsSection .siteSection__title {
     width: 50%;
   }
 }
