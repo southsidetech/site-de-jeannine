@@ -35,7 +35,7 @@ p {
 }
 
 .DMVS h1 {
-  font-family: "Amatic SC", serif;
+  font-family: "Amatic SC", cursive;
   font-size: 72px;
   width: 45%;
   margin: 28px 0;
@@ -68,7 +68,7 @@ p {
 .DMVS .siteSection__title {
   background: linear-gradient(#094d10, #020f03);
   color: #fff;
-  font-family: "Amatic SC", serif;
+  font-family: "Amatic SC", cursive;
   font-size: 20px;
   text-align: right;
   border-radius: 0 10px 10px 0;
@@ -102,7 +102,7 @@ p {
 }
 
 .DMVS #infusionsSection h3 {
-  font-family: "Amatic SC", serif;
+  font-family: "Amatic SC", cursive;
   font-size: 30px;
 }
 
@@ -175,7 +175,7 @@ p {
 }
 
 .DMVS #feesSection__students p {
-  font-family: "Amatic SC", serif;
+  font-family: "Amatic SC", cursive;
   font-size: 28px;
   font-weight: 500;
   margin: 10px 0;
@@ -232,7 +232,7 @@ p {
 }
 
 .DMVS .formRow label {
-  font-family: "Amatic SC", serif;
+  font-family: "Amatic SC", cursive;
   font-size: 28px;
   color: #103623;
 }
@@ -285,7 +285,7 @@ p {
 
 .DMVS footer {
   background-color: #094d10;
-  font-family: "Amatic SC", serif;
+  font-family: "Amatic SC", cursive;
   font-size: 20px;
   padding: 20px 6% 20px 8%;
 }
